@@ -26,7 +26,7 @@ Insert into CONCESSIONS(
     inventory_amount,
 )VALUES(
     111,
-    99
+    30
 );
 
 -- Insert into Vendors Table
