@@ -48,7 +48,7 @@ Insert into TICKETS(
     movie_id
 )VALUES(
     1,
-    18.00,
+    8.00,
     1,
     1
 );
