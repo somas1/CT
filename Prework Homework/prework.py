@@ -5,7 +5,7 @@
 #         .....
 
 def hello_name(user_name):
-    print(user_name)
+    print("Hello_" + user_name.upper())
 
 # test hello_name()
 hello_name('John')
