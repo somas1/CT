@@ -55,7 +55,7 @@ def is_leap_year(a_year):
 print(2000, is_leap_year(2000))
 print(2004, is_leap_year(2004))
 print(1900, is_leap_year(1900))
-kuprint(1988, is_leap_year(1988))
+print(1988, is_leap_year(1988))
 
 
 # Question 5
