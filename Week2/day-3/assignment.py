@@ -7,3 +7,4 @@ def circumference(radius):
    return pi * (radius *2)
 
 print(circumference(5))
+print(circumference(2))
