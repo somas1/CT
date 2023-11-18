@@ -66,7 +66,7 @@ kernelspec:
 class Car():
     wheels = 4
     color = 'blue'
-```
+```python
 
 +++ {"id": "oT17Jz5oM4KZ"}
 
