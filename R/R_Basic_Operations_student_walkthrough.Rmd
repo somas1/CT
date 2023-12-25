@@ -11,6 +11,7 @@ Comments in R are denoted by `#`
 
 ```{r}
 # This is a comment
+# Here is another.
 ```
 
 There is no built-in way to do multi-line comments.
@@ -23,28 +24,28 @@ Mathematical operations in R are handled using the standard 4 symbols `+, -, /, 
 
 ```{r}
 # Addition
-
+10 + 512
 ```
 
 ### Subtraction
 
 ```{r}
 # Subtraction
-
+921 - 14
 ```
 
 ### Multiplication
 
 ```{r}
 # Multiplication
-
+12 * 42
 ```
 
 ### Division
 
 ```{r}
 # Division
-
+925 / 5
 ```
 
 ## Variable Assignment
@@ -52,13 +53,19 @@ Mathematical operations in R are handled using the standard 4 symbols `+, -, /, 
 Variables in R are traditionally assigned using an arrow sign `<-` , made using a less than carat and a dash. It is valid to use `=` , but not recommended.
 
 ```{r}
-
+# option and - will create the arrow sign
+x <- 10
+x
 ```
 
 Variable names can not include and spaces or symbols other than the underscore `_` . They cannot begin with numbers, but can include numbers after the first character.
 
 ```{r}
+this_is_valid_10 <- 'test'
+this_is_valid_10
 
+womp_a_domp <- 'Rick and Morty'
+womp_a_domp
 ```
 
 ## Data Types
@@ -70,21 +77,23 @@ R has the following data types: numeric, integer, character, logical, and comple
 Decimal values in R are numerics. Numerics are the default data type for numbers.
 
 ```{r}
-
+a <- 10
+class(a)
 ```
 
 ```{r}
-
+b <- 1.5
+class(b)
 ```
 
 Note: Numerics are not integers. You can confirm this with both a and b above using the `is.integer()` function.
 
 ```{r}
-
+is.integer(a)
 ```
 
 ```{r}
-
+is.integer(b)
 ```
 
 ### Integer
@@ -92,21 +101,23 @@ Note: Numerics are not integers. You can confirm this with both a and b above us
 To create an integer in R we can use the `as.integer()` function.
 
 ```{r}
-
+c <- as.integer(1)
+c
 ```
 
 ```{r}
-
+is.integer(c)
 ```
 
 For shorthand, we can also define an integer by writing the desired integer value, followed by a capital L.
 
 ```{r}
-
+d <- 1L
+class(d)
 ```
 
 ```{r}
-
+d
 ```
 
 Integers must be whole numbers, if passed a floating value, the number will be rounded to an integer.
