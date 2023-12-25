@@ -214,7 +214,7 @@ substr("How much wood could a woodchuck chuck?", start <- 5, stop <- 13)
 You can replace characters in a string using the `sub` function
 
 ```{r}
-
+sub("much", "little", "How much wood could a woodchuck chuck?")
 ```
 
 ### Logical
@@ -222,11 +222,12 @@ You can replace characters in a string using the `sub` function
 A logical value is commonly referred to as a boolean value. It is the result of a comparison between two variables. It is represented as `TRUE` or `FALSE.`
 
 ```{r}
-
+x <- TRUE
+y <- FALSE
 ```
 
 ```{r}
-
+x & y
 ```
 
 #### Logical Operators
