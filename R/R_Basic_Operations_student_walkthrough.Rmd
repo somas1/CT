@@ -176,7 +176,7 @@ class(x)
 You can print out hardcoded character objects with the `print` function
 
 ```{r}
-
+print("John ate 12 cookies.")
 ```
 
 You can print out formatted character objects with the `sprintf` function. You can use the following symbols to represent formatted parts of the code, each should be preceded by a `%` symbol:
@@ -194,7 +194,7 @@ You can print out formatted character objects with the `sprintf` function. You c
 -   e and E - Double precision value (For exponential representation, for example: 2.1234e+01)
 
 ```{r}
-
+sprintf("%s ate %d cookies.", "John", 12)
 ```
 
 ```{r}
