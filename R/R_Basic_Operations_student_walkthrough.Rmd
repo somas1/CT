@@ -206,7 +206,7 @@ sprintf("%f %e", 21.234, 21.234)
 You can get a substring from a character object using the `substr` function
 
 ```{r}
-
+substr("How much wood could a woodchuck chuck?", start <- 5, stop <- 13)
 ```
 
 #### Replacing characters in a string
