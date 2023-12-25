@@ -123,13 +123,15 @@ d
 Integers must be whole numbers, if passed a floating value, the number will be rounded to an integer.
 
 ```{r}
-
+d <- as.integer(3.19)
+d
 ```
 
 This also works with a string.
 
 ```{r}
-
+e <- as.integer("3.19")
+e
 ```
 
 We would use an integer data-type when we want to represent a whole integer, and don't want to accept any other variations of numbers. The numeric data-type is less strict, it allows us to switch between different number types like integers and floats dynamically.
@@ -140,7 +142,8 @@ A **character** type is used to represent strings in R. Characters can be denote
 
 ```{r}
 # Defining a character object
-
+name <- "Joe"
+name
 ```
 
 #### Concatenating character objects
@@ -148,7 +151,10 @@ A **character** type is used to represent strings in R. Characters can be denote
 Character objects can be concatenated into a single variable using the `paste` function
 
 ```{r}
-
+first_name <- "Joe"
+last_name <- "Smith"
+full_name <- paste(first_name,last_name)
+full_name
 ```
 
 #### Converting into character objects
