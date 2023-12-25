@@ -315,7 +315,8 @@ You can use the following operators to compare two variables and return a logica
     first <- "John"
     last <- "Thomas"
     full <- paste(first,last)
-    paste("My name is",full)
+    #paste("My name is",full)
+    sprintf("My name is %s", full)
     ```
 
 2.  What values can a BOOLEAN contain?
