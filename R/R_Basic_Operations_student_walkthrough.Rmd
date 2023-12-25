@@ -219,7 +219,14 @@ sub("much", "little", "How much wood could a woodchuck chuck?")
 
 ### Logical
 
-A logical value is commonly referred to as a boolean value. It is the result of a comparison between two variables. It is represented as `TRUE` or `FALSE.`
+A logical value is commonly referred to as a boolean value. It is the result of a comparison between two variables. It is represented as `TR``UE` or `FALSE.`
+
+```{r}
+x <- 1
+y <- 3
+z <- x > y
+z
+```
 
 ```{r}
 x <- TRUE
