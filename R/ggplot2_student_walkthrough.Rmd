@@ -1,0 +1,93 @@
+## **R Libraries: ggplot2**
+
+The R library `ggplot2` is a super useful tool we can use to create visualizations and explore our data.
+
+```{bash}
+install.packages("tidyverse")
+library("tidyverse")
+```
+
+More things we can do to get more information on R and what we're doing:
+
+```{bash}
+help()
+```
+
+We'll need a few more packages for our exploration usage, too. We can install them all at once by using the `c()` function, which creates a list. We'll open these packages with the `library()` function later.
+
+```{bash}
+install.packages(c("nycflights13", "gapminder", "Lahman"))
+```
+
+Built in to our tidyverse are several data sets that we can play around with. In the below code block, we create a variable `myplot` and save the `mpg` database to it.
+
+```{r}
+
+```
+
+**Something you should be aware of and have open (perhaps on a second monitor, or you can print them out) is the ggplot2 cheat sheet!** <https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf>
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+Whoa, where'd count come from? **Count is not a variable or attribute of the variable diamonds!** Count comes automatically with a lot of graphs as an attribute. You can verify what I'm saying with `?diamonds` in the console.
+
+Any attribute of a data set that is algorithmically calculated is called a *stat*, which is short for a statistical transformation. Many of the **geom** functions have stats built in, and many stats display geoms. For example, the above code block used a geom, but this one uses a stat, and results in an identical chart:
+
+```{r}
+
+```
+
+Let's add color here!
+
+```{r}
+
+```
+
+What if we add to a different variable than cut?
+
+```{r}
+
+```
+
+**For your consideration...** Is the above a good graph?
+
+```{r}
+alt- becomes <- (option- on mac)
+```
+
+## Homework
+
+```{r}
+# Find a builtin data set for students to explore; use their cheat sheet from stats to label continuous and discrete data; Analyze that data set, create graphs, find a hypothesis
+
+```
