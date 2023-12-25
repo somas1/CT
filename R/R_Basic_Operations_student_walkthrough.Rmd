@@ -198,7 +198,7 @@ sprintf("%s ate %d cookies.", "John", 12)
 ```
 
 ```{r}
-
+sprintf("%f %e", 21.234, 21.234)
 ```
 
 #### Return a substring
