@@ -162,12 +162,13 @@ full_name
 We can convert other objects into character objects using the `as.character()` function
 
 ```{r}
-
+x <- as.character(12)
+x
 ```
 
 ```{r}
 # Note that class returns the data type of our object
-
+class(x)
 ```
 
 #### Printing character types
