@@ -302,27 +302,27 @@ You can use the following operators to compare two variables and return a logica
 -   `!=` Is NOT equal to
 
 ```{r}
-
+12 > 10
 ```
 
 ```{r}
-
+12 < 10
 ```
 
 ```{r}
-
+12 <= 10
 ```
 
 ```{r}
-
+12 >= 10
 ```
 
 ```{r}
-
+12 == 10
 ```
 
 ```{r}
-
+12 != 10
 ```
 
 ## Homework
