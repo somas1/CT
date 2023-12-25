@@ -256,19 +256,20 @@ The standard logical operations are:
 -   `!` - Not
 
 ```{r}
-
+x <- TRUE
+y <- FALSE
 ```
 
 ```{r}
-
+x & y
 ```
 
 ```{r}
-
+x|y
 ```
 
 ```{r}
-
+!x
 ```
 
 ### Complex
