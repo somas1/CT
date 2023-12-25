@@ -311,7 +311,10 @@ You can use the following operators to compare two variables and return a logica
 1.  Create two strings with your first and last name, respectively. Then concatenate them, and print the new value as "My name is \<your newly created concatenated variable will go here\>"
 
     ```{r}
-
+    first <- "John"
+    last <- "Thomas"
+    full <- paste(first,last)
+    paste("My name is",full)
     ```
 
 2.  What values can a BOOLEAN contain?
