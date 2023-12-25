@@ -23,7 +23,8 @@ install.packages(c("nycflights13", "gapminder", "Lahman"))
 Built in to our tidyverse are several data sets that we can play around with. In the below code block, we create a variable `myplot` and save the `mpg` database to it.
 
 ```{r}
-
+myplot <- mpg
+myplot
 ```
 
 **Something you should be aware of and have open (perhaps on a second monitor, or you can print them out) is the ggplot2 cheat sheet!** <https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf>
