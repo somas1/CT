@@ -277,11 +277,12 @@ x|y
 A complex object in R is created using the symbol `i` . The use of the i symbol is in reference to imaginary numbers.
 
 ```{r}
-
+z <- 1+2i
+z
 ```
 
 ```{r}
-
+class(z)
 ```
 
 ## Comparison Operators
