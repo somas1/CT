@@ -51,7 +51,11 @@ ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = displ 
 ```
 
 ```{r}
-ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = rgb(0.7,1,0.3)))
+
+```
+
+```{r}
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = rgb(0.7,1,0.3))) + facet_wrap(~ class, nrow = 2)
 ```
 
 ```{r}
