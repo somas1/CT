@@ -321,3 +321,5 @@ You can use the following operators to compare two variables and return a logica
     ```
 
 2.  What values can a BOOLEAN contain?
+
+A BOOLEAN value can contain the values TRUE or FALSE.
