@@ -234,6 +234,10 @@ x & y
 x|y
 ```
 
+```{r}
+!x
+```
+
 #### Logical Operators
 
 The standard logical operations are:
