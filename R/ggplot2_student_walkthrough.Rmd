@@ -4,6 +4,7 @@ The R library `ggplot2` is a super useful tool we can use to create visualizatio
 
 ```{bash}
 install.packages("tidyverse")
+# library("packagename") is similar to import in python
 library("tidyverse")
 ```
 
