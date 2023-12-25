@@ -230,6 +230,10 @@ y <- FALSE
 x & y
 ```
 
+```{r}
+x|y
+```
+
 #### Logical Operators
 
 The standard logical operations are:
