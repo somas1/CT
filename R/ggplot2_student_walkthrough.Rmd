@@ -27,6 +27,10 @@ myplot <- mpg
 myplot
 ```
 
+```{r}
+view(mpg)
+```
+
 **Something you should be aware of and have open (perhaps on a second monitor, or you can print them out) is the ggplot2 cheat sheet!** <https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf>
 
 ```{r}
