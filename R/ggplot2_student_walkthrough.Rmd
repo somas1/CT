@@ -101,7 +101,7 @@ ggplot(data = diamonds) + stat_count(mapping = aes(x = cut))
 Let's add color here!
 
 ```{r}
-
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, color = cut))
 ```
 
 What if we add to a different variable than cut?
