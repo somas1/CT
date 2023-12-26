@@ -439,9 +439,6 @@ vector_array <- array(
 vector_array
 ```
 
-```         
-```
-
 2.  In the above matrix that you created, print the value 5 by indexing in to the matrix.
 
 3.  Print the third row of the first matrix.
@@ -449,5 +446,6 @@ vector_array
 4.  Print the second column of both matrices.
 
     ```{r}
-
+    #print 5 from first matrix[]
+    vector_array[2,2,1]
     ```
