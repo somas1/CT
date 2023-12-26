@@ -274,7 +274,15 @@ my_matrix
 You can name columns and rows with the optional dimnames parameter
 
 ```{r}
+my_matrix <- matrix(
+  c(10,9,8,7,6,5,4,3,2,1),
+  nrow <- 2,
+  ncol <- 5,
+  byrow <- FALSE,
+  dimnames <- list(c("Row 1", "Row 2"), c("COL 1","COL 2","COL 3", "COL 4","COL 5"))
+)
 
+my_matrix
 ```
 
 ### Accessing Matrix Values
