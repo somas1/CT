@@ -111,7 +111,9 @@ ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = cut))
 What if we add to a different variable than cut?
 
 ```{r}
+pie = ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity), position = "fill") + theme(aspect.ratio = 1) + labs(x = NULL, y = NULL)
 
+pie + coord_polar()
 ```
 
 **For your consideration...** Is the above a good graph?
