@@ -104,6 +104,10 @@ Let's add color here!
 ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, color = cut))
 ```
 
+```{r}
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = cut))
+```
+
 What if we add to a different variable than cut?
 
 ```{r}
