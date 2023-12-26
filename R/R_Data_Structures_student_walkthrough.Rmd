@@ -404,7 +404,7 @@ Factors are created using the `factor()` function and passing in a vector of dat
 
 ```{r}
 # A factor of eye colors
-
+my_factor <- factor("Blue","Green","Brown","Blue","Green","Brown","Gray")
 ```
 
 You can also use the optional levels parameter to specify the order in which the levels should be displayed.
