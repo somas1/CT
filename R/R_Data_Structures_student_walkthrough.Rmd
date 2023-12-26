@@ -291,7 +291,7 @@ Values in a matrix can be accessed by indexing with square brackets.
 
 ```{r}
 # Get the element in the 2nd row and 4th column
-
+my_matrix[2,4]
 ```
 
 You can also get entire rows and columns.
