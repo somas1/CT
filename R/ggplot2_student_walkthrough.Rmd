@@ -133,7 +133,7 @@ Fill is more readabe than dodge above.
 ## Homework
 
 ```{r}
-# Find a builtin data set for students to explore; use their cheat sheet from stats to label continuous and discrete data; Analyze that data set, create graphs, find a hypothesis
+# Find a builtin data set for students to explore; use their cheat sheet from stats to label continuous and discrete data; Use graphs to tell me about 3 data sets.
 nycflights13::flights
 ```
 
