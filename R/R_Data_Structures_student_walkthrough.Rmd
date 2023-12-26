@@ -454,3 +454,8 @@ vector_array
     # print 5 from second matrix
     vector_array[2,2,2]
     ```
+
+    ```{r}
+    # Print the third row of the first matrix.
+
+    ```
