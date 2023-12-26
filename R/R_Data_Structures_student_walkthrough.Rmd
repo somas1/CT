@@ -10,7 +10,8 @@ output: html_notebook
 Vectors are a list-like data structure that can contain any number of items of the same data type. Vector elements are separated by commas, and the entire vector must be wrapped in `c()`
 
 ```{r}
-
+names <- c("John", "Jim", "Jenny", "Jake", "Jan")
+names
 ```
 
 ### Getting a Vector's Type
@@ -18,7 +19,7 @@ Vectors are a list-like data structure that can contain any number of items of t
 You can get the type of the elements inside of a vector using the `typeof()` function
 
 ```{r}
-
+typeof(names)
 ```
 
 ### Getting a Vector's Length
