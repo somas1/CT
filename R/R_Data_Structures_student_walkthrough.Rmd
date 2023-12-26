@@ -336,7 +336,8 @@ mult_mat
 #### Division
 
 ```{r}
-
+div_mat <- matrix_1 / matrix_2
+div_mat
 ```
 
 ## Arrays
