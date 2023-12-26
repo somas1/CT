@@ -134,7 +134,14 @@ student_list
 ```
 
 ```{r}
-student_list[2]
+```
+
+```{r}
+student_info <- list("John",94)
+student_info
+```
+
+```{student_list[2]}
 ```
 
 ## Dataframes
