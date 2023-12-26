@@ -322,13 +322,15 @@ add_mat
 #### Subtraction
 
 ```{r}
-
+sub_mat <- matrix_1 - matrix_2
+sub_mat
 ```
 
 #### Multiplication
 
 ```{r}
-
+mult_mat <- matrix_1 * matrix_2
+mult_mat
 ```
 
 #### Division
