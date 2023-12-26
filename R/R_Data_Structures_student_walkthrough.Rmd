@@ -449,3 +449,8 @@ vector_array
     #print 5 from first matrix[]
     vector_array[2,2,1]
     ```
+
+    ```{r}
+    # print 5 from second matrix
+    vector_array[2,2,2]
+    ```
