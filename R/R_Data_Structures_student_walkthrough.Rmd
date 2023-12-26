@@ -67,7 +67,8 @@ my_seq_3
 You can sort vectors using the `sort()` function
 
 ```{r}
-
+my_vector <- c(10, 19, 4, -2, -6, 0, 12000)
+sort(my_vector)
 ```
 
 ### Vector Calculations
