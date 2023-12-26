@@ -297,7 +297,8 @@ my_matrix[2,4]
 You can also get entire rows and columns.
 
 ```{r}
-
+print("The entire second row")
+print(my_matrix[2,])
 ```
 
 ### Calculations between two matrices
