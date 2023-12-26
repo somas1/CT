@@ -378,7 +378,7 @@ You can access array elements with square brackets, then three arguments. The ro
 
 ```{r}
 # Get the element in the second row, third column, first matrix
-
+my_array[2,3,1]
 ```
 
 ```{r}
