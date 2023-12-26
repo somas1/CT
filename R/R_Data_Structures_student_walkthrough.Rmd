@@ -191,7 +191,8 @@ summary(df)
 You can index specific columns from a dataframe using the dataframe variable, then a `$` , then the name of the column.
 
 ```{r}
-
+student_grades <- df$student_grade_level
+student_grades
 ```
 
 You can also index specific rows by calling the name of the dataframe, followed by square brackets and the rows you want to retrieve. The square brackets accept two values, the first is the rows you want, the second is the columns.
