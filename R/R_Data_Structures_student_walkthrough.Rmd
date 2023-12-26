@@ -27,7 +27,7 @@ typeof(names)
 You can get the length of a vector using the `length()` function
 
 ```{r}
-
+length(names)
 ```
 
 ### Indexing a Vector
@@ -38,6 +38,7 @@ You can get the value at a specific index in your vector by placing the elements
 
 ```{r}
 # Note this returns "John", the first element in our Vector
+names[1]
 ```
 
 ### Generating a sequence between two numerical values
