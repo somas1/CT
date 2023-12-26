@@ -408,7 +408,7 @@ my_factor <- factor(c("Blue","Green","Brown","Blue","Green","Brown","Gray"))
 my_factor
 ```
 
-You can also use the optional levels parameter to specify the order in which the levels should be displayed.
+You can also use the optional levels parameter to specify the order in which the levels should be displayed (When sorted).
 
 ```{r}
 my_factor <- factor(
