@@ -204,7 +204,7 @@ df[1:2,]
 
 ```{r}
 # Get the first and third rows and all of the columns
-
+df[c(1,3),]
 ```
 
 ```{r}
