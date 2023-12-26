@@ -183,7 +183,7 @@ str(df)
 You can get a summary of the data inside of a dataframe using the `summary()` function. This returns useful information like the type of each column and statistical information like the mean, median, and mode of numerical columns.
 
 ```{r}
-
+summary(df)
 ```
 
 ### Retrieving data from a dataframe
