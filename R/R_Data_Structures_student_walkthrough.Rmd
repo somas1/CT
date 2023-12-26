@@ -45,10 +45,11 @@ names[1]
 
 ```{r}
 # Generate a sequence from 5 to 15
-
-
+my_seq <- 5:15
+my_seq
 # Generate a sequence with decimals
-
+my_seq_2 <- 5.5:15.5
+my_seq_2
 ```
 
 #### Using the seq() function
@@ -57,7 +58,8 @@ You can also create sequences with more customization by using the `seq()` funct
 
 ```{r}
 # Step from 5 to 15 by increments of .3
-
+my_seq_3 <- seq(5,15, by <- .3)
+my_seq_3
 ```
 
 ### Vector Sorting
