@@ -299,6 +299,10 @@ You can also get entire rows and columns.
 ```{r}
 print("The entire second row")
 print(my_matrix[2,])
+
+print("------------")
+print("The entire third column: ")
+print(my_matrix[,3])
 ```
 
 ### Calculations between two matrices
