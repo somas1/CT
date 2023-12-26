@@ -79,6 +79,10 @@ ggplot(data = mpg) + geom_smooth(mapping = aes(x = displ, y = hwy, linetype = dr
 ```
 
 ```{r}
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, linetype = drv)) + geom_point(mapping = aes(color = class)) + geom_smooth(se = FALSE)
+```
+
+```{r}
 
 ```
 
