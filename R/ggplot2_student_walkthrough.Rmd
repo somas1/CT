@@ -95,7 +95,7 @@ Whoa, where'd count come from? **Count is not a variable or attribute of the var
 Any attribute of a data set that is algorithmically calculated is called a *stat*, which is short for a statistical transformation. Many of the **geom** functions have stats built in, and many stats display geoms. For example, the above code block used a geom, but this one uses a stat, and results in an identical chart:
 
 ```{r}
-
+ggplot(data = diamonds) + stat_count(mapping = aes(x = cut))
 ```
 
 Let's add color here!
