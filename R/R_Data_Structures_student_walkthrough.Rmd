@@ -457,5 +457,5 @@ vector_array
 
     ```{r}
     # Print the third row of the first matrix.
-
+    vector_array[3,,1]
     ```
