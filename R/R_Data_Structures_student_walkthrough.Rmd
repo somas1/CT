@@ -111,7 +111,13 @@ div_vector
 If we perform vector calculations on uneven vectors, the elements of the shorter vectors are reused to fill in the remaining length
 
 ```{r}
+vector_1 <- c(1,2,3)
+vector_2 <- c(4,5,6,7,8,9)
 
+vector_add <- vector_1 + vector_2
+vector_add
+
+# vector_1 is repeated to make c(1,2,3,1,2,3)
 ```
 
 ## Lists
