@@ -262,8 +262,11 @@ my_matrix <- matrix(
   c(10,9,8,7,6,5,4,3,2,1),
   nrow <- 2,
   ncol <- 5,
+  byrow <- FALSE,
   dimnames <- list(c("Row 1", "Row 2"))
 )
+
+my_matrix
 ```
 
 ### Naming Columns and Rows
