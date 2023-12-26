@@ -141,8 +141,7 @@ student_info <- list("John",94)
 student_info
 ```
 
-```{student_list[2]}
-```
+`{student_list[2]}`
 
 ## Dataframes
 
@@ -226,7 +225,20 @@ df
 To add new rows to a dataframe, we need to first create a new dataframe using the same structure as the original, then combine the two using the `rbind()` function
 
 ```{r}
+student_name <- c("Jan","Jimmy")
+student_grade_level <- c("Freshman","Senior")
+student_class_grade <- c(82,64)
+student_subject <- c("Math","History")
 
+new_df <- data.frame(
+  student_name,
+  student_grade_level,
+  student_class_grade,
+  student_subject
+)
+
+combined_df <- rbind(df,new_df)
+combined_df
 ```
 
 ## Matrices
