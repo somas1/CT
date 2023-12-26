@@ -308,13 +308,15 @@ print(my_matrix[,3])
 ### Calculations between two matrices
 
 ```{r}
-
+matrix_1 <- matrix(c(1,2,3,4,5,6),nrow <- 3)
+matrix_2 <- matrix(c(4,5,6,7,8,9),nrow <- 3)
 ```
 
 #### Addition
 
 ```{r}
-
+add_mat <- matrix_1 + matrix_2
+add_mat
 ```
 
 #### Subtraction
