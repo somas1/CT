@@ -161,7 +161,9 @@ Dataframes have the following constraints: 
 When creating a dataframe, you first create the values for each column, and use these to generate your dataframe. You generate a dataframe using the `data.frame()` function.
 
 ```{r}
-
+student_name <- c("John","Jake","Jenny")
+student_grade_level <- c("Sophomore","Junior","Senior")
+student_class_grade <- c(65,82,91)
 ```
 
 ### str()
