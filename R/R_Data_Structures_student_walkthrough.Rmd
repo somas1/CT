@@ -74,13 +74,15 @@ sort(my_vector)
 ### Vector Calculations
 
 ```{r}
-
+vector_1 <- c(1,2,3,4,5,6)
+vector_2 <- c(4,5,6,7,8,9)
 ```
 
 #### Addition
 
 ```{r}
-
+add_vector <- vector_1 + vector_2
+add_vector
 ```
 
 #### Subtraction
