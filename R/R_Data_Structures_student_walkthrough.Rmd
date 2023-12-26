@@ -199,7 +199,7 @@ You can also index specific rows by calling the name of the dataframe, followed 
 
 ```{r}
 # Get the first two rows and all of the columns
-
+df[1:2,]
 ```
 
 ```{r}
