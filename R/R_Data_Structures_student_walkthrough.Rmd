@@ -388,7 +388,7 @@ my_array[2,,]
 
 ```{r}
 # Get the second column of all of the matrices
-
+my_array[,2,]
 ```
 
 ```{r}
