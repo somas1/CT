@@ -127,12 +127,16 @@ pie + coord_polar()
 **For your consideration...** Is the above a good graph?
 
 ```{r}
-alt- becomes <- (option- on mac)
+Fill is more readabe than dodge above.
 ```
 
 ## Homework
 
 ```{r}
 # Find a builtin data set for students to explore; use their cheat sheet from stats to label continuous and discrete data; Analyze that data set, create graphs, find a hypothesis
+nycflights13::flights
+```
 
+```{r}
+View(nycflights13::flights)
 ```
