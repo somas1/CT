@@ -90,7 +90,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, linetype = drv)) + geom_poi
 ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut))
 ```
 
-Whoa, where'd count come from? **Count is not a variable or attribute of the variable diamonds!** Count comes automatically with a lot of graphs as an attribute. You can verify what I'm saying with `?diamonds` in the console.
+Whoa, where'd count come from? **Count is not a variable or attribute of the variable diamonds!** Count comes automatically with a lot of graphs as an attribute. You can verify what I'm saying with `?diamonds` in the console. Count shows up because this is a discrete data set, rather than the continuous data set that we have been using (mpg).
 
 Any attribute of a data set that is algorithmically calculated is called a *stat*, which is short for a statistical transformation. Many of the **geom** functions have stats built in, and many stats display geoms. For example, the above code block used a geom, but this one uses a stat, and results in an identical chart:
 
