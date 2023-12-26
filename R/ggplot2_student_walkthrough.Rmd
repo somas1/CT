@@ -116,6 +116,14 @@ pie = ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity),
 pie + coord_polar()
 ```
 
+```{r}
+
+pie = ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = clarity), position = "dodge") + theme(aspect.ratio = 1) + labs(x = NULL, y = NULL)
+
+pie + coord_polar()
+
+```
+
 **For your consideration...** Is the above a good graph?
 
 ```{r}
