@@ -125,11 +125,16 @@ vector_add
 Lists in R are generic objects that contain an ordered collection of objects. Lists can contain a variety of data types (they are heterogeneous). Lists are created with the `list()` function.
 
 ```{r}
+student_grades <- c(94,96,42,98,75,82)
+student_names <- c("John","Jake","Jimmy","Jane","Jason","Jenny")
+student_count <- length(student_names)
 
+student_list <- list(student_grades,student_names,student_count)
+student_list
 ```
 
 ```{r}
-
+student_list[2]
 ```
 
 ## Dataframes
