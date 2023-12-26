@@ -164,6 +164,10 @@ When creating a dataframe, you first create the values for each column, and use 
 student_name <- c("John","Jake","Jenny")
 student_grade_level <- c("Sophomore","Junior","Senior")
 student_class_grade <- c(65,82,91)
+
+# Create a dataframe from these three vectors, each vector is its own column.
+df <- data.frame(student_name,student_grade_level,student_class_grade)
+df
 ```
 
 ### str()
