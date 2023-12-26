@@ -175,7 +175,7 @@ df
 You can get the structure of a dataframe using the `str()` function
 
 ```{r}
-
+str(df)
 ```
 
 ### summary()
