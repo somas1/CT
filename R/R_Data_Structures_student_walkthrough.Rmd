@@ -360,7 +360,16 @@ my_array
 You can name columns, rows, and matrices using the optional dimnames parameter
 
 ```{r}
+my_array <- array(
+  #data
+  c(124,254,116,123,923,102,12),
+  #dimensions
+  dim <- c(3,3,3),
+  #row/column names
+  dimnames <- list(c("ROW 1","ROW 2", "ROW 3"), c("COL 1","COL 2", "LUNCH"), c("MATRIX 1", "MATRIX RELOADED", "MATRIX 3"))
+)
 
+my_array
 ```
 
 ### Accessing Array Elements
