@@ -95,13 +95,15 @@ sub_vector
 #### Multiplication
 
 ```{r}
-
+mul_vector <- vector_1 * vector_2
+mul_vector
 ```
 
 #### Division
 
 ```{r}
-
+div_vector <- vector_1 / vector_2
+div_vector
 ```
 
 ### Vector Recycling
