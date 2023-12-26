@@ -258,7 +258,12 @@ The following parameters are available to you using matrices:
 -   **dimnames** is the names assigned to the rows and columns.
 
 ```{r}
-
+my_matrix <- matrix(
+  c(10,9,8,7,6,5,4,3,2,1),
+  nrow <- 2,
+  ncol <- 5,
+  dimnames <- list(c("Row 1", "Row 2"))
+)
 ```
 
 ### Naming Columns and Rows
