@@ -87,7 +87,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, linetype = drv)) + geom_poi
 ```
 
 ```{r}
-
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut))
 ```
 
 Whoa, where'd count come from? **Count is not a variable or attribute of the variable diamonds!** Count comes automatically with a lot of graphs as an attribute. You can verify what I'm saying with `?diamonds` in the console.
