@@ -88,7 +88,8 @@ add_vector
 #### Subtraction
 
 ```{r}
-
+sub_vector <- vector_1 - vector_2
+sub_vector
 ```
 
 #### Multiplication
