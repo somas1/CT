@@ -151,7 +151,9 @@ apply(test_mat, 2, sum)
 It is common to use `mean`, `median`, `sum`, `min`, or `max` with `apply`, but we can also use our user-defined functions as well. Note that apply() only works with matrices.
 
 ```{r}
+test_temp_mat <- matrix(c(16.550540, 26.942005, 32.591088, 8.580116, 28.003873, 28.542391, 20.976820, 21.173577, 21.048836, 18.769735), nrow = 2)
 
+apply(test_temp_mat, 1, c_to_f)
 ```
 
 ### Homework
