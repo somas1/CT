@@ -136,7 +136,15 @@ A shortcut of sorts is to use the `apply()` function, which operates very simila
 
 ```{r}
 test_mat <- matrix(c(1,1,1,2,2,2), nrow <- 2)
+test_mat
+```
+
+```{r}
 apply(test_mat, 1, sum)
+```
+
+```{r}
+apply(test_mat, 2, sum)
 ```
 
 It is common to use `mean`, `median`, `sum`, `min`, or `max` with `apply`, but we can also use our user-defined functions as well. Note that apply() only works with matrices.
