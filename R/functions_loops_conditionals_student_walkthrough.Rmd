@@ -41,8 +41,12 @@ if (a <= 5) {
 Neat! We can also nest conditionals just like we do in Python.
 
 ```{r}
-
-    
+a <- 5
+if (a / 2 != 0) {
+  if (a == 5) {
+    print("a is 5")
+  }
+}
 ```
 
 Neat! Now, let's look at another core part of R programming - Loops!
