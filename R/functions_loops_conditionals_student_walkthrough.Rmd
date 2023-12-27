@@ -112,6 +112,13 @@ An example:
 ```{r}
 # Start with a vector of temperatures
 test_temp <- c(16.550540, 26.942005, 32.591088, 8.580116, 28.003873, 28.542391, 20.976820, 21.173577, 21.048836, 18.769735)
+
+# function that converts from C to F
+c_to_f <- function(dat){
+  temp_fahr <- dat*(9/5) + 32
+  
+  return(temp_fahr)
+}
 ```
 
 This is all cool.. but it didn't do anything. We need to call the function!
