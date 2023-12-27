@@ -88,7 +88,13 @@ for (row in 1:2){
 Like Python, we have while loops in R:
 
 ```{r}
-
+b <- 0
+while (b < 10){
+  # increase b by 2
+  b <- b + 2
+  # print b
+  print(b)
+}
 ```
 
 ## Functions
