@@ -218,19 +218,32 @@ apply(test_temp_mat, 1, c_to_f)
     ```{r}
     # https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/r
     # get the sum of two arrays... Actually the sum of all their elements.
+    array_plus_array <- function(vec1,vec2){
+      if(length(vec1) < length(vec2)) {
+        for(i in ((length(vec1)+1):length(vec2))) {
+          vec1 = c(vec1,0)
+        }
+      } else if (length(vec2) < length(vec1)) {
+        for(i in((length(vec2)+1):length(vec1))) {
+          vec2 = c(vec2,0)
+        }
+      }
+     return(sum(vec1+vec2))
+    }
 
 
 
-
-    array_plus_arrayc(1, 2, 3), c(4, 5, 6)) == 21
+    array_plus_array(c(1, 2, 3), c(4, 5, 6)) == 21
     array_plus_array(c(-1, -2, -3), c(-4, -5, -6)) == -21
     array_plus_array(c(0, 0, 0), c(4, 5, 6)) == 15
-    array_plus_array(c(100, 200, 300), c(400, 500, 600)) == 100
+    array_plus_array(c(100, 200, 300), c(400, 500, 600)) == 2100
 
     ```
 
     ```{r}
-
+    vector_1 <- c(1,2,3,4,5,6)
+    vector_2 <- c(4,5,6,7,8)
+    vector_1+vector_2
 
     ```
 
