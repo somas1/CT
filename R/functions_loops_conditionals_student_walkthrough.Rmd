@@ -161,6 +161,22 @@ apply(test_temp_mat, 1, c_to_f)
 1.  Do 5 CodeWars problems in R. Share your solutions here:
 
     ```{r}
+    # In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+    # https://www.codewars.com/kata/554b4ac871d6813a03000035/train/r
+    high_and_low <- function(numbers){
+     split <- strsplit(numbers, split = " ")
+      
+      sorted <- sort(as.numeric(unlist(split)))
+      
+      max <- sorted[length(sorted)]
+      min <- sorted[1]
+      
+      return (paste(max,min))
+    }
+
+    #'Example tests'
+    high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4") == "42 -9"
+    high_and_low("1 2 3") == "3 1"
 
     ```
 
