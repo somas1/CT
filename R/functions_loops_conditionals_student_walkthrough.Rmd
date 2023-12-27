@@ -15,7 +15,12 @@ if (logical statement) {
 The logical statements should boil down to a boolean; for example:
 
 ```{r}
-
+a <- 10
+if (a <= 5) {
+  print(a)
+} else {
+  print("It's more than 5")
+}
 ```
 
 We can also add else if statements in the middle if we need more options.
