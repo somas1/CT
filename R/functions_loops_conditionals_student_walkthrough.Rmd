@@ -54,7 +54,10 @@ Neat! Now, let's look at another core part of R programming - Loops!
 ### Loops
 
 ```{r}
-
+for (value in 1:5) {
+  # Paste is a concatenation function
+  print(paste(value, "is greater than", value - 1))
+}
 ```
 
 We can also do nifty stuff with our vectors, such as apply changes to specific indices of our data.
