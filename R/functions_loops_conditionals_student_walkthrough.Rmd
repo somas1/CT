@@ -203,6 +203,7 @@ apply(test_temp_mat, 1, c_to_f)
     ```
 
     ```{r}
+    # https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/r
 
     ```
 
