@@ -110,7 +110,8 @@ our_function <- function(optional_params){
 An example:
 
 ```{r}
-
+# Start with a vector of temperatures
+test_temp <- c(16.550540, 26.942005, 32.591088, 8.580116, 28.003873, 28.542391, 20.976820, 21.173577, 21.048836, 18.769735)
 ```
 
 This is all cool.. but it didn't do anything. We need to call the function!
