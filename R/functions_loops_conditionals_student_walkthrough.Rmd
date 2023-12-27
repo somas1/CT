@@ -213,6 +213,23 @@ apply(test_temp_mat, 1, c_to_f)
     findSmallestInt(c(78,56,232,12,11,43)) == 11
     findSmallestInt(c(78,56,-2,12,8,-33)) == -33
     findSmallestInt(c(0, -1-.Machine$integer.max)) == -1-.Machine$integer.max
+    ```
+
+    ```{r}
+    # https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/r
+    # get the sum of two arrays... Actually the sum of all their elements.
+
+
+
+
+    array_plus_arrayc(1, 2, 3), c(4, 5, 6)) == 21
+    array_plus_array(c(-1, -2, -3), c(-4, -5, -6)) == -21
+    array_plus_array(c(0, 0, 0), c(4, 5, 6)) == 15
+    array_plus_array(c(100, 200, 300), c(400, 500, 600)) == 100
+
+    ```
+
+    ```{r}
 
 
     ```
