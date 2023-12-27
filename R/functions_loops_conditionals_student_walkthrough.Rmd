@@ -26,7 +26,16 @@ if (a <= 5) {
 We can also add else if statements in the middle if we need more options.
 
 ```{r}
-
+a <- 15
+if (a <= 5) {
+  print("small")
+} else if (a > 5 & a <= 10) {
+  print("medium")
+} else if (a > 10 | a == 7) {
+  print("large")
+} else {
+  print("huge")
+}
 ```
 
 Neat! We can also nest conditionals just like we do in Python.
