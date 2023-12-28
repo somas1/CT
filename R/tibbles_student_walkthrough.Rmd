@@ -20,7 +20,8 @@ tibble(
 If we need to make a tibble display more columns than it thinks it should, we can override it with print():
 
 ```{r}
-
+flights %>%
+  print(n = 10, width = Inf)
 ```
 
 The best way to see more of the data than a tibble default displays is to use View(). Nice!
