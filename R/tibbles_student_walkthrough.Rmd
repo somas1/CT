@@ -27,7 +27,7 @@ flights %>%
 The best way to see more of the data than a tibble default displays is to use View(). Nice!
 
 ```{r}
-
+View(flights)
 ```
 
 #### Subsetting
