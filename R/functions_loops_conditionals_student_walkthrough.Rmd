@@ -302,4 +302,11 @@ apply(test_temp_mat, 1, c_to_f)
 
     ```{r}
     # You may feel more comfortable figuring this out in Python first, then translating into R later.
+
+    marioStars <- function(level){
+      stairs <- matrix("X", nrow = level, ncol = level)
+      print(stairs)
+    }
+
+    marioStars(4)
     ```
