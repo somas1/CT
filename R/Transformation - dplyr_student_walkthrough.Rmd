@@ -33,7 +33,9 @@ Like SQL, we'll use aggregation to break these functions down into groups; we'll
 dplyr functions follow a common syntax: \`function_name(\<data frame\>, \<\*args\>)\<resulting data frame\>. Many data frames in R are called 'tibbles'. Don't worry too much about what this means for now - just imagine them like tables in SQL for right now. An example of the dplyr syntax:
 
 ```{r}
+library(dplyr)
 
+filter(flights, month == 3, day == 15)
 ```
 
 In the above example, I had two arguments - month == 3, and day == 15. This filtered down the results to only display flights that occurred on March 15, which is the day I wrote this (except the `nycflights13` data is from 2013 - RStudio was only two years old!)
