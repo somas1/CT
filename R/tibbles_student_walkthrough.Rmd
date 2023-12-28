@@ -33,7 +33,21 @@ View(flights)
 #### Subsetting
 
 ```{r}
+df <- tibble(
+  x = runif(5),
+  y = rnorm(5)
+)
 
+df$x
+```
+
+```{r}
+df[1]
+```
+
+```{r}
+# subsetting using pipe
+df %>% . $x
 ```
 
 At this point, it should be pointed out that the transformation functions from `dplyr` are extremely valuable in context of subsets. In most programming, there are multiple ways of finding the same answer; this applies here as well.
