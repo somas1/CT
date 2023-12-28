@@ -1,0 +1,147 @@
+## R - dplyr and Data Transformation
+
+A few things about data and data types in R! Like Python, we have specified types of data we'll use in our tables.
+
+-   int is integer
+
+-   dbl is doubles
+
+-   chr is for character or characters
+
+-   dttm is date-time
+
+-   lgl is logical - similar to Booleans in Python or other programming languages; either TRUE or FALSE
+
+-   fctr is factors (We won't use these much yet)
+
+-   date - self explanatory.
+
+### There are five main processes we'll use with dplyr to manipulate our data:
+
+-   `filter()` our data by choosing data by value
+
+-   `arrange()` data by reordering rows
+
+-   `select()` specific data items
+
+-   `mutate()` existing data into new data
+
+-   `summarize()` values into a single summary
+
+Like SQL, we'll use aggregation to break these functions down into groups; we'll do so by using a `group_by()` function as well.
+
+dplyr functions follow a common syntax: \`function_name(\<data frame\>, \<\*args\>)\<resulting data frame\>. Many data frames in R are called 'tibbles'. Don't worry too much about what this means for now - just imagine them like tables in SQL for right now. An example of the dplyr syntax:
+
+```{r}
+
+```
+
+In the above example, I had two arguments - month == 3, and day == 15. This filtered down the results to only display flights that occurred on March 15, which is the day I wrote this (except the `nycflights13` data is from 2013 - RStudio was only two years old!)
+
+Remember, too, that just like ggplot2 - we can still ask questions in our console, like `?flights` to get more information.
+
+Much like python, we can compare values using comparison operators - `>`, `<`, `>=`, `<=`, `==`, `!=`. We also get to use & and \| for comparisons of multiple booleans.
+
+```{r}
+
+```
+
+### Arranging Rows
+
+```{r}
+
+```
+
+## Selecting Columns
+
+```{r}
+
+```
+
+(You might want to pop out the tibble into another window for better viewing).
+
+Other useful tools for sorting through selected columns:
+
+-   starts_with()
+
+-   ends_with()
+
+-   contains()
+
+-   matches() - inside of this, you'll insert a string of Regex
+
+-   num_range("n", 5:7) will match n5, n6, and n7
+
+-   everything() will include all the rest of the columns. So you can put it at the end of a select statement as a parameter, and you'll be able to move selected columns to the left side, and then include the rest of the data.
+
+### Mutating Data
+
+Besides being a terrifying name, mutating data is an important part of exploring out data. This function allows us to combine observations from other columns to create a new column of observations. For example:
+
+```{r}
+
+```
+
+You can now see the `gain` and `speed` columns have been created; `mutate()` always places those new columns at the end of the data set, so if you'd want to move them to the front, you'd use `select()`.
+
+Keep in mind as you do mutations that whatever process you end up using has to be something that iterates on data sets, and that produces something iterable as well.
+
+### Summarizing Data
+
+```{r}
+
+```
+
+First off, this is kind of a weird table. It only has one piece of data in it! Not especially useful. By the way, the `na.rm = True` line asks the function to remove any missing values in the data. If we didn't have it when we use `group_by()`, we'd have a lot of observations reading `NA`, which isn't very helpful. In our current data set, the delay times for cancelled flights are populating the database with `NA` values.
+
+Summarizing data is a lot easier if we use `group_by()` with it. This is very similar to how we use aggregate functions in SQL.
+
+```{r}
+
+```
+
+### Using Pipe to string together functions
+
+These functions become more and more useful when we can combine them together - often our exploration will be multi-step. Fortunately, there's a way we can combine functions together - pipe.
+
+Imagine we want to look at the relationship between distance and average delay for each location. We'll group flights by destination, figure out distance, average delay, and number of flights, and then filter out noise and the airport in Honolulu, which is so far away from other airports that it will make it hard to see the data we want to focus on.
+
+```{r}
+# Code before we use pipe:
+
+```
+
+A more efficient way of doing the same thing, where we don't need to write variables for each step over and over, uses pipe:
+
+```{r}
+
+```
+
+This way, we can simply thread queries together without having to write new variables every time. It's inferred that each function is working on the same data frame, so we don't need to write it in as the first parameter of each function here. It's pretty normal to add a count function into our code as well, so that we know how large our data sets are - if we've queried our data down into a very small number of values, it can be easy to mistakenly draw conclusions based on a very small amount of data.
+
+Please note: The only part of the tidyverse that won't work with pipe is ggplot2. You can pipe into it, but you can't pipe afterwards.
+
+```{r}
+# Create a variable that we can re-use later that removes all cancelled flights
+
+```
+
+Now we can look at the plotted data of delay times, and try to learn something about delay times.
+
+```{r}
+
+```
+
+This chart makes it look like there are planes with an average delay of 5 hours, which is bizarre. Maybe we're not looking at a large enough data set! For example - maybe we're working with a small data set, like if we were only looking at a small number of total flights. Imagine if this data set were only 100 flights, and one plane had a 10 hour delay, and no delay on it's second flight. That plane would now appear to have 5 hours of delay on average! Obviously, this is a problem, and we need to be sure that we don't have too small of a data set.
+
+```{r}
+
+```
+
+Now we have a better idea. Let's change the plot parameters so we can get a better look at the bulk of our data - we have some outliers for flights that are greatly delayed here, and we can see that the flights with heavy delays have very few flights to their name. It's possible these planes had other issues causing their delays, and they didn't do any other flights.
+
+```{r}
+
+```
+
+Looks like the majority of flights leave on time most of the time. This is a much better data set to look at to find information about the bulk of flight delays.
