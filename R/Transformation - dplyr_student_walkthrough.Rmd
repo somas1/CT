@@ -161,7 +161,12 @@ Please note: The only part of the tidyverse that won't work with pipe is ggplot2
 
 ```{r}
 # Create a variable that we can re-use later that removes all cancelled flights
+not_cancelled <- flights %>%
+  filter(!is.na(dep_delay), !is.na(arr_delay))
 
+not_cancelled %>%
+  group_by(year, month, day) %>%
+  summarise(mean = mean(dep_delay))
 ```
 
 Now we can look at the plotted data of delay times, and try to learn something about delay times.
