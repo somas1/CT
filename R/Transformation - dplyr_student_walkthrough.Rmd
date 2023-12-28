@@ -150,7 +150,8 @@ delays <- flights %>%
     count = n(),
     dist = mean(distance, na.rm = TRUE),
     delay = mean(arr_delay, na.rm = TRUE)
-  )
+  ) %>%
+filter(count > 20, dest != "HNL")
 ```
 
 This way, we can simply thread queries together without having to write new variables every time. It's inferred that each function is working on the same data frame, so we don't need to write it in as the first parameter of each function here. It's pretty normal to add a count function into our code as well, so that we know how large our data sets are - if we've queried our data down into a very small number of values, it can be easy to mistakenly draw conclusions based on a very small amount of data.
