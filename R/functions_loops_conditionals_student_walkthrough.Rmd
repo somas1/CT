@@ -241,15 +241,40 @@ apply(test_temp_mat, 1, c_to_f)
     ```
 
     ```{r}
-    vector_1 <- c(1,2,3,4,5,6)
-    vector_2 <- c(4,5,6,7,8)
-    vector_1+vector_2
+    # https://www.codewars.com/kata/56b1f01c247c01db92000076/train/r
+    # Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+    double_char <- function(str){
+      doubled <- strsplit(str,'')
+      result <- ""
+      
+      for(char1 in (strsplit(str,''))){
+        result <- paste(result,char1,sep="")
+        for(char2 in doubled){
+          result <- paste(result,char2,sep="")
+        }
+      }
+      print(toString(result))
+      my_result <- gsub(",", "", toString(result))
+      result <- gsub(" ", "", my_result)
+      print(result)
+    }
+
+    double_char("abcd") == "aabbccdd"
+    double_char("Adidas") == "AAddiiddaass"
+    double_char("1337") == "11333377"
+    double_char("illuminati") == "iilllluummiinnaattii"
+    double_char("123456") == "112233445566"
+    double_char("%^&*(") == "%%^^&&**(("
+
 
     ```
 
 2.  Create a function that checks an input of type `int` and returns fizz if the number is a multiple of 3, buzz if the number is a multiple of 5, and fizzbuzz if the number is a multiple of 3 and 5.
 
     ```{r}
+    # https://www.codewars.com/kata/56b1f01c247c01db92000076/train/r
+    # Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
 
     ```
 
