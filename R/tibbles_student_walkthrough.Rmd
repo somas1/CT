@@ -4,7 +4,6 @@
 
 -   Tibbles only show the first 10 rows vertically, and horizontally will display data only as it fits on the screen in columns
 -   Tibbles also show their data type for each column (for example: `<chr>` for character, `<dbl>` for doubles)
--   
 
 ```{r}
 
