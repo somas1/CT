@@ -1,0 +1,39 @@
+## Tibbles
+
+#### data frames vs tibbles
+
+-   Tibbles only show the first 10 rows vertically, and horizontally will display data only as it fits on the screen in columns
+-   Tibbles also show their data type for each column (for example: `<chr>` for character, `<dbl>` for doubles)
+-   
+
+```{r}
+
+```
+
+If we need to make a tibble display more columns than it thinks it should, we can override it with print():
+
+```{r}
+
+```
+
+The best way to see more of the data than a tibble default displays is to use View(). Nice!
+
+```{r}
+
+```
+
+#### Subsetting
+
+```{r}
+
+```
+
+At this point, it should be pointed out that the transformation functions from `dplyr` are extremely valuable in context of subsets. In most programming, there are multiple ways of finding the same answer; this applies here as well.
+
+You can also turn a tibble back into a data frame with `as.data.frame()`. This only really comes into play if you're interacting with older code.
+
+## Reading Data
+
+```{r}
+view(read_csv("https://github.com/genomicsclass/dagdata/blob/master/inst/extdata/femaleMiceWeights.csv"))
+```
