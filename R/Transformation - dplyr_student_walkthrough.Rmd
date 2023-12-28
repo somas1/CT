@@ -36,6 +36,11 @@ dplyr functions follow a common syntax: \`function_name(\<data frame\>, \<\*args
 {filter(flights, month == 3, day == 15)}
 ```
 
+```{r}
+View(flights)
+View(filter(flights, month == 3, day == 15))
+```
+
 In the above example, I had two arguments - month == 3, and day == 15. This filtered down the results to only display flights that occurred on March 15, which is the day I wrote this (except the `nycflights13` data is from 2013 - RStudio was only two years old!)
 
 Remember, too, that just like ggplot2 - we can still ask questions in our console, like `?flights` to get more information.
