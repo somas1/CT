@@ -130,7 +130,13 @@ Imagine we want to look at the relationship between distance and average delay f
 
 ```{r}
 # Code before we use pipe:
-
+by_destination <- group_by(flights, dest)
+delay <- summarise(by_destination,
+                   count = n(),
+                   # n() gives current group size
+                   dist = mean(distance, na.rm = TRUE),
+                   delay = mean(arr_delay, na.rm = TRUE)
+                   )
 ```
 
 A more efficient way of doing the same thing, where we don't need to write variables for each step over and over, uses pipe:
