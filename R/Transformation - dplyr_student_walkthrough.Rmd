@@ -54,7 +54,7 @@ View(filter(flights, carrier == "AA" | carrier == "UA" | carrier == "DL" ))
 ### Arranging Rows
 
 ```{r}
-
+View(arrange(flights, year, month, day, desc(sched_dep_time)))
 ```
 
 ## Selecting Columns
