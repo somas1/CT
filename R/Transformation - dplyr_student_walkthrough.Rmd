@@ -92,7 +92,14 @@ Other useful tools for sorting through selected columns:
 Besides being a terrifying name, mutating data is an important part of exploring out data. This function allows us to combine observations from other columns to create a new column of observations. For example:
 
 ```{r}
-
+flight_data <- select(flights,
+                       year:day,
+                       ends_with("delay"),
+                       distance,
+                       air_time
+                       )
+View((mutate(flight_data, gain = arr_delay - dep_delay,
+             speed = distance / air_time * 60)))
 ```
 
 You can now see the `gain` and `speed` columns have been created; `mutate()` always places those new columns at the end of the data set, so if you'd want to move them to the front, you'd use `select()`.
