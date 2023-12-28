@@ -1,0 +1,6 @@
+```{r}
+stonks <- read_csv('social media stocks 2012-2022.csv') %>%
+  group_by(Symbol)
+ggplot(data = stonks) +
+  geom_smooth(mapping = aes(x = Date, y = High, color = Symbol))
+```
