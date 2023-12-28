@@ -109,7 +109,8 @@ Keep in mind as you do mutations that whatever process you end up using has to b
 ### Summarizing Data
 
 ```{r}
-
+# na.rm means "Not Applicable, Remove" This will remove non-applicable values without a mean
+summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
 ```
 
 First off, this is kind of a weird table. It only has one piece of data in it! Not especially useful. By the way, the `na.rm = True` line asks the function to remove any missing values in the data. If we didn't have it when we use `group_by()`, we'd have a lot of observations reading `NA`, which isn't very helpful. In our current data set, the delay times for cancelled flights are populating the database with `NA` values.
