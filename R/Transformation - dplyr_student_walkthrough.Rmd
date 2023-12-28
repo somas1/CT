@@ -177,7 +177,8 @@ delays <- not_cancelled %>%
   summarise(
     delay = mean(arr_delay)
   )
-ggplot(data = delays, mapping = aes(x = delay))
+ggplot(data = delays, mapping = aes(x = delay)) + 
+  geom_freqpoly(binwidth = 10)
 ```
 
 This chart makes it look like there are planes with an average delay of 5 hours, which is bizarre. Maybe we're not looking at a large enough data set! For example - maybe we're working with a small data set, like if we were only looking at a small number of total flights. Imagine if this data set were only 100 flights, and one plane had a 10 hour delay, and no delay on it's second flight. That plane would now appear to have 5 hours of delay on average! Obviously, this is a problem, and we need to be sure that we don't have too small of a data set.
