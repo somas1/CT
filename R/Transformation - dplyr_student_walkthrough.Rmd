@@ -118,7 +118,8 @@ First off, this is kind of a weird table. It only has one piece of data in it! N
 Summarizing data is a lot easier if we use `group_by()` with it. This is very similar to how we use aggregate functions in SQL.
 
 ```{r}
-
+by_day <- group_by(flights, year, month, day)
+summarise(by_day, delay = mean(dep_delay, na.rm = TRUE))
 ```
 
 ### Using Pipe to string together functions
