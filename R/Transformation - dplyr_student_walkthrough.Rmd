@@ -190,6 +190,8 @@ delays <- not_cancelled %>%
     delay = mean(arr_delay, na.rm = TRUE),
     n = n()
   )
+ggplot(data = delays, mapping = aes(x = n, y = delay)) +
+  geom_point(alpha = 1/10)
 ```
 
 Now we have a better idea. Let's change the plot parameters so we can get a better look at the bulk of our data - we have some outliers for flights that are greatly delayed here, and we can see that the flights with heavy delays have very few flights to their name. It's possible these planes had other issues causing their delays, and they didn't do any other flights.
