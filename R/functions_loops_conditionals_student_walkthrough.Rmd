@@ -276,11 +276,11 @@ apply(test_temp_mat, 1, c_to_f)
      fizzbuzz <- function(myRange){
        for(number in myRange)
          if(number %% 3 == 0 && number %% 5 == 0){
-           print(paste(number,"fizzbuzz"))
+           print("fizzbuzz")
          } else if(number %% 3 == 0) {
-           print(paste(number,"fizz"))
+           print("fizz")
          } else if(number %% 5 == 0) {
-           print(paste(number,"buzz"))
+           print("buzz")
          }
      }
      
