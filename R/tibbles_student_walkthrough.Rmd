@@ -6,7 +6,7 @@
 -   Tibbles also show their data type for each column (for example: `<chr>` for character, `<dbl>` for doubles)
 
 ```{r}
-
+as_tibble(iris)
 ```
 
 If we need to make a tibble display more columns than it thinks it should, we can override it with print():
