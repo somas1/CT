@@ -48,7 +48,7 @@ Remember, too, that just like ggplot2 - we can still ask questions in our consol
 Much like python, we can compare values using comparison operators - `>`, `<`, `>=`, `<=`, `==`, `!=`. We also get to use & and \| for comparisons of multiple booleans.
 
 ```{r}
-
+View(filter(flights, carrier == "AA" | carrier == "UA" | carrier == "DL" ))
 ```
 
 ### Arranging Rows
