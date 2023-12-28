@@ -61,6 +61,10 @@ View(arrange(flights, year, month, day, desc(sched_dep_time)))
 arrange(flights, year, month, day, desc(sched_dep_time))
 ```
 
+```{r}
+arrange(flights, carrier, month, day, desc(sched_dep_time))
+```
+
 ## Selecting Columns
 
 ```{r}
