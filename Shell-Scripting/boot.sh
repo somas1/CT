@@ -5,7 +5,7 @@ read -p "Play game? " answer
 
 case $answer in
    [yY]* ) 
-       python3 rocks-paper-scissors.py
+       python3 rock-paper-scissors.py
        ;;
    [nN]* ) 
        echo "Okay, maybe next time."
