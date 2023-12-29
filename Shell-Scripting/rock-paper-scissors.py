@@ -21,5 +21,5 @@ def who_won(player_choice,computer_choice):
     (player_choice == 'paper' and computer_choice == 'rock'):
      print(f"{} beats {}. You win", player_choice, computer_choice)
     else:
-        print(f"")
+        print(f"{} beats {}. You lose", computer_choice, player_choice")
 
