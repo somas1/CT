@@ -20,3 +20,6 @@ def who_won(player_choice,computer_choice):
     player_choice == 'scissors' and computer_choice == 'paper' or \
     player_choice == 'paper' and computer_choice == 'rock'
     print(f"{} beats {}. You win", player_choice, computer_choice)
+
+    else:
+        
