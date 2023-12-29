@@ -6,3 +6,5 @@ def menu():
 
     if choice not in choices:
         print("Please enter 'rock', 'paper' or 'scissors'")
+        menu()
+    return choice
