@@ -1,6 +1,8 @@
 import random
 
 def menu():
-    options = ["rock", "paper", "scissors"]
+    choices = ["rock", "paper", "scissors"]
     choice = input("Rock, paper or scissors?: ")
-    
+
+    if choice not in choices:
+        print("Please enter 'rock', 'paper' or 'scissors'")
