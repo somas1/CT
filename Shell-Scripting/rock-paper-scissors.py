@@ -18,6 +18,8 @@ def who_won(player_choice,computer_choice):
         print(f"Both players chose {}", player_choice)
     elif (player_choice == 'rock' and computer_choice == 'scissors') or \
     (player_choice == 'scissors' and computer_choice == 'paper') or \
-    player_choice == 'paper' and computer_choice == 'rock'
-    print(f"{} beats {}. You win", player_choice, computer_choice)
+    (player_choice == 'paper' and computer_choice == 'rock'):
+     print(f"{} beats {}. You win", player_choice, computer_choice)
+    else:
+        
 
