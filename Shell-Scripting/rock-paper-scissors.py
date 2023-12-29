@@ -19,4 +19,4 @@ def who_won(player_choice,computer_choice):
     elif player_choice == 'rock' and computer_choice == 'scissors' or \
     player_choice == 'scissors' and computer_choice == 'paper' or \
     player_choice == 'paper' and computer_choice == 'rock'
-    print(f'{} beats {}')
+    print(f'{} beats {}. You win')
