@@ -29,5 +29,5 @@ while True:
     print(f'Player chose {player_choice}, computer chose {computer_choice}')
     who_won(player_choice, computer_choice)
     again = input("Do you want to play again? Y/N: ")
-    if again.lower != "y":
+    if again.lower() != "y":
         break
