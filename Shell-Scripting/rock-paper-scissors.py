@@ -16,4 +16,4 @@ def computer_choice():
 def who_won(player_choice,computer_choice):
     if player_choice == computer_choice:
         print(f'Both players chose {}', player_choice)
-    elif player_choice == 'rock' and computer_choice == 'scissors'
+    elif player_choice == 'rock' and computer_choice == 'scissors' or \
