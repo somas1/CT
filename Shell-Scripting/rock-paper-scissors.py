@@ -23,3 +23,11 @@ def who_won(player_choice,computer_choice):
     else:
         print(f"{computer_choice} beats {player_choice}. You lose")
 
+while True:
+    player_choice = player()
+    computer_choice = computer_choice()
+    print(f'Player chose {player_choice}, computer chose {computer_choice}')
+    who_won(player_choice, computer_choice)
+    again = input("Do you want to play again? Y/N: ")
+    if again.lower != "y":
+        break
