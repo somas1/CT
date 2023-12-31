@@ -7,7 +7,7 @@ def player():
     if choice.lower() not in choices:
         print("Please enter 'rock', 'paper' or 'scissors'")
         player()
-    return choice.lower
+    return choice.lower()
 
 def computer_choice():
     choice = random.choice(['rock','paper','scissors'])
