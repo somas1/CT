@@ -4,14 +4,14 @@ def player():
     choices = ["rock", "paper", "scissors"]
     choice = input("Rock, paper or scissors?: ")
 
-    if choice not in choices:
+    if choice.lower() not in choices:
         print("Please enter 'rock', 'paper' or 'scissors'")
         player()
-    return choice
+    return choice.lower
 
 def computer_choice():
     choice = random.choice(['rock','paper','scissors'])
-    return choice
+    return choice.lower()
 
 def who_won(player_choice,computer_choice):
     if player_choice == computer_choice:
