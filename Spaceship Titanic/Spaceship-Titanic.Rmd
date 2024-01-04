@@ -31,3 +31,9 @@ head(trainingData)
 ```{r}
 str(trainingData)
 ```
+
+```{r}
+x_labels <- trainingData$Transported
+y_values <- table(trainingData$Transported)
+barplot(y_values, names.arg = x_labels)
+```
