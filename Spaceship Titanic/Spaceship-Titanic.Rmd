@@ -48,3 +48,9 @@ text(x = barplot(y_values, col = bar_colors), y = y_values, labels = y_values, p
 ```
 
 I wasn't able to make a satisfactory bar chart and googling a lot just started to get confusing. The chart does show slightly more TRUE than FALSE.
+
+```{r}
+library(ggplot2)
+
+ggplot(trainingData, aes(x = Age)) + geom_histogram(fill = 'blue', bins = 50)
+```
