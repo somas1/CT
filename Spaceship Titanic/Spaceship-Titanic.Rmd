@@ -33,7 +33,18 @@ str(trainingData)
 ```
 
 ```{r}
-x_labels <- trainingData$Transported
-y_values <- table(trainingData$Transported)
-barplot(y_values, names.arg = x_labels)
+#trainingData$Transported
+table(trainingData$Transported)
 ```
+
+```{r}
+x_labels <- factor(trainingData$Transported, levels = c(FALSE, TRUE))
+#xlabels <- (FALSE TRUE)
+bar_colors <- c("red","blue")
+y_values <- table(trainingData$Transported)
+#barplot(y_values, col = bar_colors)
+# Add labels to the bars
+text(x = barplot(y_values, col = bar_colors), y = y_values, labels = y_values, pos = 3, cex = 0.8)
+```
+
+I wasn't able to make a satisfactory bar chart and googling a lot just started to get confusing. The chart does show slightly more TRUE than FALSE.
