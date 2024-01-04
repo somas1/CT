@@ -23,3 +23,11 @@ The training data has 14 columns with 8693 entries.
 summary_stats <- summary(trainingData)
 print(summary_stats)
 ```
+
+```{r}
+head(trainingData)
+```
+
+```{r}
+str(trainingData)
+```
