@@ -52,5 +52,9 @@ I wasn't able to make a satisfactory bar chart and googling a lot just started t
 ```{r}
 library(ggplot2)
 
-ggplot(trainingData, aes(x = Age)) + geom_histogram(fill = 'blue', bins = 50)
+
+```
+
+```{r}
+ggplot(trainingData, aes(x = FoodCourt)) + geom_histogram(fill = 'blue', bins = 50)
 ```
