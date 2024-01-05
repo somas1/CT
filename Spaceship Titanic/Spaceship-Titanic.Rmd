@@ -58,3 +58,13 @@ library(ggplot2)
 ```{r}
 ggplot(trainingData, aes(x = FoodCourt)) + geom_histogram(fill = 'blue', bins = 50)
 ```
+
+```{r}
+# calculate the number of missing values in each column
+missing_values <- colSums(is.na(trainingData))
+
+# sort missing values in descending order
+sorted_missing_values <- sort(missing_values, decreasing = TRUE)
+
+print(sorted_missing_values)
+```
