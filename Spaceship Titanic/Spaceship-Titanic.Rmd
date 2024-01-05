@@ -68,3 +68,7 @@ sorted_missing_values <- sort(missing_values, decreasing = TRUE)
 
 print(sorted_missing_values)
 ```
+
+```{r}
+trainingData$Cabin
+```
