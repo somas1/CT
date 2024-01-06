@@ -70,5 +70,17 @@ print(sorted_missing_values)
 ```
 
 ```{r}
-trainingData$Cabin
+#trainingData[['Cabin']]
+summary(trainingData[['Cabin']])
+```
+
+```{r}
+summary
+```
+
+```{r}
+
+```
+
+```{(trainingData[['Age']])}
 ```
