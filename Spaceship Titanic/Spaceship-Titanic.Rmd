@@ -215,13 +215,17 @@ summary(trainingData[['CryoSleep']])
 ```
 
 ```{r}
-summary(transported_df[['CryoSleep']])
+transported_in_cryosleep <- summary(transported_df[['CryoSleep']])
 ```
 
 ```{r}
-summary(not_transported_df[['CryoSleep']])
+not_transported_in_cryosleep <- summary(not_transported_df[['CryoSleep']])
 ```
 
 ```{r}
-summary(trainingData[['CryoSleep']])
+in_cryosleep <- summary(trainingData[['CryoSleep']])
+```
+
+```{r}
+transported_in_cryosleep[['TRUE']]#/in_cryosleep[['TRUE']]
 ```
