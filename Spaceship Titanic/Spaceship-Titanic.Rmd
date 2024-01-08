@@ -138,7 +138,8 @@ mean_age_not_transported <- mean(not_transported_df$Age, na.rm = TRUE)
 mean_age_transported
 ```
 
-```         
+```{r}
+mean_age_not_transported
 ```
 
 ```{r}
