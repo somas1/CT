@@ -60,6 +60,22 @@ ggplot(trainingData, aes(x = FoodCourt)) + geom_histogram(fill = 'blue', bins = 
 ```
 
 ```{r}
+ggplot(trainingData, aes(x = Age)) + geom_histogram(fill = 'blue', bins = 50)
+```
+
+```{r}
+ggplot(trainingData, aes(x = ShoppingMall
+```
+
+```{r}
+ggplot(trainingData, aes(x = Spa)) + geom_histogram(fill = 'blue', bins = 50)
+```
+
+```{r}
+ggplot(trainingData, aes(x = VRDeck)) + geom_histogram(fill = 'blue', bins = 50)
+```
+
+```{r}
 # calculate the number of missing values in each column
 missing_values <- colSums(is.na(trainingData))
 
@@ -113,7 +129,7 @@ mean_age_not_transported <- mean(not_transported_df$Age, na.rm = TRUE)
 mean_age_transported
 ```
 
-```{}
+```         
 ```
 
 ```{r}
