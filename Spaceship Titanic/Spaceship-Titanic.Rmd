@@ -231,3 +231,7 @@ as.numeric(transported_in_cryosleep[['TRUE']])/as.numeric(in_cryosleep[['TRUE']]
 ```
 
 About 82% of the people in CryoSleep were transported.
+
+```{r}
+
+```
