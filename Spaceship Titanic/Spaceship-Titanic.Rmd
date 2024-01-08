@@ -143,29 +143,19 @@ mean_age_not_transported
 ```
 
 ```{r}
-transported_df <- trainingData %>%
+library(dplyr)
+
+trainingData %>%
+  filter(Transported == TRUE) %>%
   group_by(Transported) %>%
-  summarise(
-    Mean = mean(Transported[['Age']], na.rm = TRUE),
-    Median = median(Transported, na.rm = TRUE),
-    Minimum = min(Transported, na.rm = TRUE),
-    Maximum = max(Transported, na.rm = TRUE),
-    Count = n(),
-    .groups = "rowwise"
-  )
+  summarise(Mean_Age = mean(Age, na.rm = TRUE),
+            Mean_Room_service = mean(RoomService, na.rm = TRUE))
 ```
 
 ```{r}
-transported_df <- trainingData %>%
-  group_by(Transported) %>%
-  summarise(
-    Mean = mean(Transported, na.rm = TRUE),
-    .groups = "rowwise"
-  )
+
 ```
 
 ```{r}
-transported_df
-class(trainingData[['Transported']])
-trainingData
+
 ```
