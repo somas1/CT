@@ -152,8 +152,8 @@ transported_stats <- trainingData %>%
             Mean_Room_service = mean(RoomService, na.rm = TRUE),
             Mean_Spa = mean(Spa, na.rm = TRUE),
             Mean_VR = mean(VRDeck, na.rm = TRUE),
-            
-            
+            Mean_Food = mean(FoodCourt, na.rm = TRUE),
+            Mean_Mall = mean(ShoppingMall, na.rm = TRUE)
             )
 ```
 
@@ -162,5 +162,19 @@ transported_stats
 ```
 
 ```{r}
+not_transported_stats <- trainingData %>%
+  filter(Transported == FALSE) %>%
+  group_by(Transported) %>%
+  summarise(Mean_Age = mean(Age, na.rm = TRUE),
+            Mean_Room_service = mean(RoomService, na.rm = TRUE),
+            Mean_Spa = mean(Spa, na.rm = TRUE),
+            Mean_VR = mean(VRDeck, na.rm = TRUE),
+            Mean_Food = mean(FoodCourt, na.rm = TRUE),
+            Mean_Mall = mean(ShoppingMall, na.rm = TRUE)
+            )
+```
 
+```{r}
+transported_stats
+not_transported_stats
 ```
