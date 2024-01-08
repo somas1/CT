@@ -64,7 +64,7 @@ ggplot(trainingData, aes(x = Age)) + geom_histogram(fill = 'blue', bins = 50)
 ```
 
 ```{r}
-ggplot(trainingData, aes(x = ShoppingMall
+ggplot(trainingData, aes(x = ShoppingMall) + geom_histogram(fill = 'blue', bins = 50)
 ```
 
 ```{r}
@@ -189,6 +189,10 @@ combined_stats
 ```
 
 ```{r}
+columns_to_plot <- c('Mean_Age', 'Mean_Room_service', 'Mean_Spa', 'Mean_VR', 'Mean_Food', 'Mean_Mall')
 
-ggplot(combined_stats, aes(x=var, fill=Group)) + geom_histogram(position = "identity", alpha=0.5, binwidth = 1) + labs(title = "Distribution of var", x="var", y="Count", fill=Group)
+for (column in columns_to_plot) {
+  print(ggplot(combined_stats, aes_string(x='Group', y=column, fill='Group')) + geom_bar(stat='identity', position = 'dodge') + labs(title = paste("Comparison of", column), x="Group", y=column, fill="Group"))
+}
+#ggplot(combined_stats, aes(x=var, fill=Group)) + geom_histogram(position = "identity", alpha=0.5, binwidth = 1) + labs(title = "Distribution of var", x="var", y="Count", fill=Group)
 ```
