@@ -198,6 +198,3 @@ for (column in columns_to_plot) {
 
 ```{It tentatively appears that the 'Transported' group has less money for luxuries than the group 'Not Transported'}
 ```
-
-```{#ggplot(combined_stats, aes(x=var, fill=Group)) + geom_histogram(position = "identity", alpha=0.5, binwidth = 1) + labs(title = "Distribution of var", x="var", y="Count", fill=Group)}
-```
