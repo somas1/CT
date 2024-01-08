@@ -200,3 +200,18 @@ for (column in columns_to_plot) {
 
 It tentatively appears that the 'Transported' group has less money for luxuries than the group 'Not Transported' 
 ```
+
+```{r}
+summary(transported_df[['CryoSleep']])
+```
+
+```{CryoSleep is a character field rather than a logical one.}
+```
+
+```{r}
+trainingData$CryoSleep <- as.logical(trainingData$CryoSleep == "True")
+summary(trainingData[['CryoSleep']])
+```
+
+```{}
+```
