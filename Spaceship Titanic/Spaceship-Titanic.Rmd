@@ -187,3 +187,8 @@ combined_stats <- rbind(transported_stats,not_transported_stats)
 
 combined_stats
 ```
+
+```{r}
+
+ggplot(combined_stats, aes(x=var, fill=Group)) + geom_histogram(position = "identity", alpha=0.5, binwidth = 1) + labs(title = "Distribution of var", x="var", y="Count", fill=Group)
+```
