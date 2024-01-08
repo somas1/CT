@@ -211,8 +211,9 @@ summary(transported_df[['CryoSleep']])
 ```{r}
 trainingData$CryoSleep <- as.logical(trainingData$CryoSleep == "True")
 summary(trainingData[['CryoSleep']])
-summary(transported_df)
+#summary(transported_df)
 ```
 
-```{}
+```{r}
+summary(transported_df[['CryoSleep']])
 ```
