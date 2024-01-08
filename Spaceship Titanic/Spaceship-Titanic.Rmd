@@ -227,5 +227,5 @@ in_cryosleep <- summary(trainingData[['CryoSleep']])
 ```
 
 ```{r}
-transported_in_cryosleep[['TRUE']]#/in_cryosleep[['TRUE']]
+as.numeric(transported_in_cryosleep[['TRUE']])/as.numeric(in_cryosleep[['TRUE']])
 ```
