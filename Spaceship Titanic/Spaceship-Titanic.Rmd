@@ -178,3 +178,12 @@ not_transported_stats <- trainingData %>%
 transported_stats
 not_transported_stats
 ```
+
+```{r}
+transported_stats$Group <- 'Transported'
+not_transported_stats$Group <- 'Not Transported'
+
+combined_stats <- rbind(transported_stats,not_transported_stats)
+
+combined_stats
+```
