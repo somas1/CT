@@ -217,3 +217,7 @@ summary(trainingData[['CryoSleep']])
 ```{r}
 summary(transported_df[['CryoSleep']])
 ```
+
+```{r}
+summary(not_transported_df[['CryoSleep']])
+```
