@@ -146,13 +146,22 @@ mean_age_not_transported
 transported_df <- trainingData %>%
   group_by(Transported) %>%
   summarise(
-    Mean = mean(Transported, na.rm = TRUE),
+    Mean = mean(Transported[['Age']], na.rm = TRUE),
+    Median = median(Transported, na.rm = TRUE),
+    Minimum = min(Transported, na.rm = TRUE),
+    Maximum = max(Transported, na.rm = TRUE),
+    Count = n(),
     .groups = "rowwise"
   )
 ```
 
 ```{r}
-
+transported_df <- trainingData %>%
+  group_by(Transported) %>%
+  summarise(
+    Mean = mean(Transported, na.rm = TRUE),
+    .groups = "rowwise"
+  )
 ```
 
 ```{r}
