@@ -103,6 +103,15 @@ summary(trainingData[['VIP']])
 summary(trainingData[['Transported']])
 ```
 
+```{Transported is character data instead of logical. This needs to be corrected.}
+```
+
+```{r}
+trainingData$Transported <- as.logical(trainingData$Transported == "True")
+summary(trainingData[['Transported']])
+#trainingData[['Transported']]
+```
+
 ```{r}
 transported <- suppressWarnings({trainingData %>%
   group_by(Transported) %>%
