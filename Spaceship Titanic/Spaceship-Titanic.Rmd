@@ -34,7 +34,7 @@ str(trainingData)
 
 ```{r}
 #trainingData$Transported
-table(trainingData$Transported)
+table(trainingData[['Transported']])
 ```
 
 ```{r}
@@ -75,12 +75,62 @@ summary(trainingData[['Cabin']])
 ```
 
 ```{r}
-summary
+summary(trainingData[['Age']])
+```
+
+```{r}
+summary(trainingData[['VIP']])
+#trainingData[['VIP']]
+```
+
+```{r}
+summary(trainingData[['Transported']])
+```
+
+```{r}
+transported <- suppressWarnings({trainingData %>%
+  group_by(Transported) %>%
+  summarise_all(list(mean = mean, sd = sd, min = min, max = max))})
+print(transported)
+```
+
+```{r}
+mean_age <- mean(trainingData[['Age']], na.rm = TRUE)
+mean_age
+```
+
+```{r}
+transported_df <- trainingData[trainingData$Transported == TRUE,]
+not_transported_df <- trainingData[trainingData$Transported == FALSE,]
+```
+
+```{r}
+mean_age_transported <- mean(transported_df$Age, na.rm = TRUE)
+mean_age_not_transported <- mean(not_transported_df$Age, na.rm = TRUE)
+```
+
+```{r}
+mean_age_transported
+```
+
+```{}
+```
+
+```{r}
+transported_df <- trainingData %>%
+  group_by(Transported) %>%
+  summarise(
+    Mean = mean(Transported, na.rm = TRUE),
+    .groups = "rowwise"
+  )
 ```
 
 ```{r}
 
 ```
 
-```{(trainingData[['Age']])}
+```{r}
+transported_df
+class(trainingData[['Transported']])
+trainingData
 ```
