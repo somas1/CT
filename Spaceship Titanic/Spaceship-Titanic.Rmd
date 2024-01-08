@@ -196,5 +196,7 @@ for (column in columns_to_plot) {
 }
 ```
 
-```{It tentatively appears that the 'Transported' group has less money for luxuries than the group 'Not Transported'}
+```{There does not appear to be much difference between the mean age of the people transported vs the people who were not transported.}
+
+It tentatively appears that the 'Transported' group has less money for luxuries than the group 'Not Transported' 
 ```
