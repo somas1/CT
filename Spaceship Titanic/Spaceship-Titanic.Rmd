@@ -145,15 +145,20 @@ mean_age_not_transported
 ```{r}
 library(dplyr)
 
-trainingData %>%
+transported_stats <- trainingData %>%
   filter(Transported == TRUE) %>%
   group_by(Transported) %>%
   summarise(Mean_Age = mean(Age, na.rm = TRUE),
-            Mean_Room_service = mean(RoomService, na.rm = TRUE))
+            Mean_Room_service = mean(RoomService, na.rm = TRUE),
+            Mean_Spa = mean(Spa, na.rm = TRUE),
+            Mean_VR = mean(VRDeck, na.rm = TRUE),
+            
+            
+            )
 ```
 
 ```{r}
-
+transported_stats
 ```
 
 ```{r}
