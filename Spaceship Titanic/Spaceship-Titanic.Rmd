@@ -238,5 +238,20 @@ trainingData
 ```
 
 ```{r}
+ggplot(trainingData, aes(x=Transported, y=Spa)) + geom_violin(aes(fill=Transported), trim=FALSE) + labs(x="Transported", y="Spa")
+```
+
+```{r}
+max(trainingData$Spa, na.rm = TRUE)
+```
+
+```{r}
+ggplot(trainingData, aes(x=Transported, y=TotalSpent)) + geom_violin(aes(fill=Transported), trim=FALSE) + labs(x="Transported", y="Spa")
+```
+
+```{The group that was transported spent much less money overall.}
+```
+
+```{r}
 
 ```
