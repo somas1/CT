@@ -254,9 +254,13 @@ Most of the passengers who were transported spent little money.
 ```
 
 ```{r}
-
+transported_sleeping_df <- subset(transported_df, CryoSleep == TRUE)
 ```
 
 ```{r}
+ggplot(transported_sleeping_df, aes(x=Transported, y=TotalSpent)) + geom_boxplot(aes(fill=Transported)) + labs(x="Transported", y="Total Spent")
+```
 
+```{r}
+subset(trainingData, CryoSleep == TRUE)
 ```
