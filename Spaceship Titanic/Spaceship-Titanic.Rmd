@@ -262,5 +262,15 @@ ggplot(transported_sleeping_df, aes(x=Transported, y=TotalSpent)) + geom_boxplot
 ```
 
 ```{r}
-subset(trainingData, CryoSleep == TRUE)
+sleeping_df <- subset(trainingData, CryoSleep == TRUE)
+```
+
+```{r}
+ggplot(sleeping_df, aes(x=Transported, y=TotalSpent)) + geom_boxplot(aes(fill=Transported)) + labs(x="Transported", y="Total Spent")
+```
+
+Passengers in cryosleep did not spend any money regardless if they were transported or not.
+
+```{r}
+
 ```
