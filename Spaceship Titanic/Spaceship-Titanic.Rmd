@@ -290,3 +290,11 @@ spent_sortedData_df
 ```{r}
 table(trainingData$HomePlanet)
 ```
+
+```{r}
+table(trainingData$Destination)
+```
+
+```{r}
+
+```
