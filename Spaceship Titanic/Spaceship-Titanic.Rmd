@@ -293,6 +293,11 @@ table(trainingData$HomePlanet)
 ```
 
 ```{r}
+from_Earth_df <- subset(trainingData, HomePlanet == 'Earth')
+table(from_Earth_df$Transported)
+```
+
+```{r}
 table(trainingData$Destination)
 ```
 
