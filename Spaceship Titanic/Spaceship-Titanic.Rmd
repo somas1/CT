@@ -286,3 +286,7 @@ Passengers in cryosleep did not spend any money regardless if they were transpor
 spent_sortedData_df <- trainingData[order(trainingData$TotalSpent),]
 spent_sortedData_df
 ```
+
+```{r}
+table(trainingData$HomePlanet)
+```
