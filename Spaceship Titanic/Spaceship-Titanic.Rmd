@@ -216,14 +216,25 @@ summary(trainingData[['CryoSleep']])
 
 ```{r}
 transported_in_cryosleep <- summary(transported_df[['CryoSleep']])
+transported_in_cryosleep
 ```
 
 ```{r}
 not_transported_in_cryosleep <- summary(not_transported_df[['CryoSleep']])
+not_transported_in_cryosleep
+```
+
+```{r}
+as.numeric(not_transported_in_cryosleep[['TRUE']])/count(not_transported_df)
+```
+
+```{r}
+12% of the people not transported were in cryosleep.
 ```
 
 ```{r}
 in_cryosleep <- summary(trainingData[['CryoSleep']])
+in_cryosleep
 ```
 
 ```{r}
@@ -272,5 +283,6 @@ ggplot(sleeping_df, aes(x=Transported, y=TotalSpent)) + geom_boxplot(aes(fill=Tr
 Passengers in cryosleep did not spend any money regardless if they were transported or not.
 
 ```{r}
-
+spent_sortedData_df <- trainingData[order(trainingData$TotalSpent),]
+spent_sortedData_df
 ```
