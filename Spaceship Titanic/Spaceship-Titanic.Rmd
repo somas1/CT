@@ -250,7 +250,7 @@ ggplot(trainingData, aes(x=Transported, y=TotalSpent)) + geom_violin(aes(fill=Tr
 ```
 
 ```{The group that was transported spent much less money overall.}
-Most of the passengers who were transported spent little money.
+Most of the passengers who were transported spent comparatively little money.
 ```
 
 ```{r}
