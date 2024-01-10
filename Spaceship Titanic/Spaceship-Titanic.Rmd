@@ -274,6 +274,7 @@ ggplot(transported_sleeping_df, aes(x=Transported, y=TotalSpent)) + geom_boxplot
 
 ```{r}
 sleeping_df <- subset(trainingData, CryoSleep == TRUE)
+sleeping_df
 ```
 
 ```{r}
@@ -296,5 +297,6 @@ table(trainingData$Destination)
 ```
 
 ```{r}
-
+to_Trappist_df <- subset(trainingData, Destination == 'TRAPPIST-1e')
+table(to_Trappist_df$Transported)
 ```
