@@ -300,3 +300,13 @@ table(trainingData$Destination)
 to_Trappist_df <- subset(trainingData, Destination == 'TRAPPIST-1e')
 table(to_Trappist_df$Transported)
 ```
+
+```{r}
+to_55_df <- subset(trainingData, Destination == '55 Cancri e')
+table(to_55_df$Transported)
+```
+
+```{r}
+to_PSO_df <- subset(trainingData, Destination == 'PSO J318.5-22')
+table(to_PSO_df$Transported)
+```
