@@ -325,3 +325,7 @@ table(to_55_df$Transported)
 to_PSO_df <- subset(trainingData, Destination == 'PSO J318.5-22')
 table(to_PSO_df$Transported)
 ```
+
+```{r}
+ggplot(trainingData, aes(x=Age)) + geom_histogram(binwidth = 5, fill = "blue", color = "black") + labs(title = "Histogram of Age", x = "Age", y = "Frequency")
+```
