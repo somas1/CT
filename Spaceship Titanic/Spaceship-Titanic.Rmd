@@ -329,3 +329,23 @@ table(to_PSO_df$Transported)
 ```{r}
 ggplot(trainingData, aes(x=Age)) + geom_histogram(binwidth = 5, fill = "blue", color = "black") + labs(title = "Histogram of Age", x = "Age", y = "Frequency")
 ```
+
+```{r}
+ggplot(transported_df, aes(x=Age)) + geom_histogram(binwidth = 5, fill = "blue", color = "black") + labs(title = "Ages of Transported", x = "Age", y = "Frequency")
+```
+
+```{r}
+ggplot(not_transported_df, aes(x=Age)) + geom_histogram(binwidth = 5, fill = "blue", color = "black") + labs(title = "Ages of Not Transported", x = "Age", y = "Frequency")
+```
+
+```{r}
+ggplot(trainingData, aes(x=Age)) + geom_density(fill = "blue", alpha = .5) + labs(title = "Density Plot of Age", x = "Age", y = "Density")
+```
+
+```{r}
+ggplot(transported_df, aes(x=Age)) + geom_density(fill = "blue", alpha = .5) + labs(title = "Density Plot of Age", x = "Age", y = "Density")
+```
+
+```{r}
+ggplot(not_transported_df, aes(x=Age)) + geom_density(fill = "blue", alpha = .5) + labs(title = "Density Plot of Age", x = "Age", y = "Density")
+```
