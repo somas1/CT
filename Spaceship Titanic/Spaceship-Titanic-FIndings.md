@@ -63,6 +63,8 @@ The mean age of the "Not Transported" group is slightly higher but fairly close 
 
 ![Food](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Food.png)
 
+![Mall](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Mall.png)
+
 
 
 
