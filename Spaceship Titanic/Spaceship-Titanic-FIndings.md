@@ -8,6 +8,8 @@ output: github_document
 ![Spaceship Titanic Hero Image](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/joel-filipe-QwoNAhbmLLo-unsplash.jpg)
 
 [Link to my RStudio Analysis Notes](https://colab.research.google.com/github/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Spaceship-Titanic.ipynb)
+
+
 Welcome to the year 2912, where your data science skills are needed to solve a cosmic mystery. We've received a transmission from four lightyears away and things aren't looking good.
 
 The Spaceship Titanic was an interstellar passenger liner launched a month ago. With almost 13,000 passengers on board, the vessel set out on its maiden voyage transporting emigrants from our solar system to three newly habitable exoplanets orbiting nearby stars.
