@@ -73,7 +73,7 @@ The passengers that were not transported spent considerably more on luxuries.
 
 ![Money Spent](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/transported-violin.png)
 
-
+The graph above shows that the majority of the "Not Transported" group spent very close to 0. 
 
 
 
