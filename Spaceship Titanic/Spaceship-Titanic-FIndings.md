@@ -9,6 +9,7 @@ output: github_document
 
 [Link to my RStudio Analysis Notes](https://colab.research.google.com/github/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Spaceship-Titanic.ipynb)
 
+---
 
 Welcome to the year 2912, where your data science skills are needed to solve a cosmic mystery. We've received a transmission from four lightyears away and things aren't looking good.
 
