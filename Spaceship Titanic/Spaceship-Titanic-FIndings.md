@@ -55,7 +55,13 @@ It's worth looking at this to see if there is a relationship between the money s
 
 The mean age of the "Not Transported" group is slightly higher but fairly close to the mean age of the "Transported" group,
 
+![Room Service](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Room%20Service.png)
 
+![Spa](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Spa.png)
+
+![VR](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/VR.png)
+
+![Food](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Food.png)
 
 
 
