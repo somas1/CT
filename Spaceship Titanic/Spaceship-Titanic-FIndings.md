@@ -65,6 +65,12 @@ The mean age of the "Not Transported" group is slightly higher but fairly close 
 
 ![Mall](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Mall.png)
 
+The passengers transported spent more on food and slightly more at the mall. 
+
+The passengers that were not transported spent considerably more on luxuries.
+
+## Hypothesis: The passengers with less income were more likely to be transported.
+
 
 
 
