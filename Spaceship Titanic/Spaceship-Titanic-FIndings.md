@@ -27,6 +27,10 @@ Help save them and change history!
 
 Loading the training data into RStudio shows us that there are 8693 entries and 14 columns of data about the Spaceship Titanic's passengers.
 
+### Known Transported Passengers
+
+![Transported Passengers](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/transported_bar_graph.png)
+
 
 
 
