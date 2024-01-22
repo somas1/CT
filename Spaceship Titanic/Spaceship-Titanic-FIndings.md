@@ -7,7 +7,7 @@ output: github_document
 [Kaggle Project Page](https://www.kaggle.com/competitions/spaceship-titanic)
 ![Spaceship Titanic Hero Image](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/joel-filipe-QwoNAhbmLLo-unsplash.jpg)
 
-[Link to my RStudio Analysis Notes](https://colab.research.google.com/github/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Spaceship-Titanic.ipynb)
+[Link to my RStudio Analysis Notes](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/Spaceship-Titanic.Rmd)
 
 ---
 
@@ -22,6 +22,11 @@ To help rescue crews and retrieve the lost passengers, you are challenged to pre
 Help save them and change history!
 
 ---
+
+## Basic Exploration of Data
+
+Loading the training data into RStudio shows us that there are 8693 entries and 14 columns of data about the Spaceship Titanic's passengers.
+
 
 
 
