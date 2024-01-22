@@ -71,6 +71,9 @@ The passengers that were not transported spent considerably more on luxuries.
 
 ## Hypothesis: The passengers with less income were more likely to be transported.
 
+![Money Spent](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/transported-violin.png)
+
+
 
 
 
