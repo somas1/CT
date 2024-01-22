@@ -33,6 +33,18 @@ Loading the training data into RStudio shows us that there are 8693 entries and 
 
 There are 4378 passengers known to have been transported and 4315 who were not. There appears to be a 50/50 chance of being transported looking at this graph.
 
+### Exploring Our Data with Graphs
+
+![Age Histogram](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Age%20Histogrampng.png)
+
+![FoodCourt-Histogram](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/FoodCourt-Histogram.png)
+
+![Spa-Histogram](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Spa-Histogram.png)
+
+![VRDeck-Histogram](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/VRDeck-Histogram.png)
+
+
+
 
 
 
