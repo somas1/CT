@@ -43,6 +43,16 @@ There are 4378 passengers known to have been transported and 4315 who were not. 
 
 ![VRDeck-Histogram](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/VRDeck-Histogram.png)
 
+The histogram of passenger ages seems to approach a normal distribution although it does skew slightly more towards 20-30 year olds. 
+
+The histograms of the various luxury amenities offered appears to be very left skewed.
+
+It's worth looking at this to see if there is a relationship between the money spent by a passenger and their transported status.
+
+## Graph Comparison Transported vs Non-Transported
+
+![Mean_Age](https://github.com/somas1/CT/blob/main/Spaceship%20Titanic/spaceship-titanic/Mean_Age.png)
+
 
 
 
